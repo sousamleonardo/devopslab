@@ -1,5 +1,5 @@
 # Use uma Imagem Official do Python
-FROM python:3.9-slim
+FROM python:3.10
 
 # Definindo o diretório onde a aplicação será armazenada
 WORKDIR /app
