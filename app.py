@@ -10,4 +10,5 @@ def pagina_inicial():
     return "Hello World - Leonardo Sousa"
 
 if __name__ == '__main__':
-    app.run()
+    port = os.getenv('PORT')
+    app.run('0.0.0.0', port=port)
