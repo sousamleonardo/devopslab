@@ -40,6 +40,7 @@ jobs:
 
   Build:
     needs: [Test, SonarCloud]
+    name: Build
     runs-on: ubuntu-latest
 
     steps:
