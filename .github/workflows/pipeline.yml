@@ -24,9 +24,6 @@ jobs:
               
       - name: Unit Test
         run: python -m unittest -v test
-      - name: Running pytest
-        run: |
-          pytest -v  --cov --cov-report=xml --cov-report=html
         
   SonarCloud:
     name: SonarCloud
