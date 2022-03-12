@@ -1,6 +1,9 @@
 # Use uma Imagem Official do Python
 FROM python:3.10
 
+# Declarando a váriavel do nome do arquivo de configuração do NewRelic
+ENV NEW_RELIC_CONFIG_FILE=newrelic.ini  NEW_RELIC_LICENSE_KEY=c6780611d1735a0646fd2f712e7ae323683bNRAL
+
 # Definindo o diretório onde a aplicação será armazenada
 WORKDIR /app
 
