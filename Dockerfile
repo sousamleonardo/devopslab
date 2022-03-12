@@ -11,4 +11,4 @@ COPY . /app
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 # Garante que será iniciado a aplicação.
-CMD ["gunicorn", "app:app"]
+CMD ["newrelic-admin", "run-program", "gunicorn", "app:app"]
